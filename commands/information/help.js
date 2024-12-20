@@ -31,14 +31,14 @@ module.exports = {
       )
       .join("");
 
-    const helpLinks = ` ## [Help Panel](https://discord.gg/teamkronix) `;
+    const helpLinks = ` ## [Help Panel](https://discord.gg/nuker) `;
 
     const embed = new client.embed()
-      
+
       .setDescription(`${helpLinks}\n\n${cat}`) // Help links are now above the categories
       .setThumbnail(client.user.displayAvatarURL())
       .setFooter({
-        text: `Kronix | Use (cmd -h) for command infoㅤㅤㅤ ㅤㅤ ㅤㅤㅤ`,
+        text: `Developed with <3 by Nyxㅤㅤㅤ ㅤㅤ ㅤㅤㅤ`,
       });
 
     let arr = [];
@@ -55,11 +55,9 @@ module.exports = {
     );
     let desc = allCmds.join("\n\n");
 
-    const all = new client.embed()
-      .setDescription(desc)
-      .setFooter({
-        text: `Developed By Kronixㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
-      });
+    const all = new client.embed().setDescription(desc).setFooter({
+      text: `Developed with <3 By Nyx`,
+    });
 
     let menu = new StringSelectMenuBuilder()
       .setCustomId("menu")
@@ -130,32 +128,38 @@ module.exports = {
       const category = interaction.values[0];
       switch (category) {
         case "home":
-          await m.edit({
-            embeds: [embed],
-          }).catch(() => {});
+          await m
+            .edit({
+              embeds: [embed],
+            })
+            .catch(() => {});
           break;
 
         case "all":
-          await m.edit({
-            embeds: [all],
-          }).catch(() => {});
+          await m
+            .edit({
+              embeds: [all],
+            })
+            .catch(() => {});
           break;
 
         default:
-          await m.edit({
-            embeds: [
-              new client.embed()
-                .setDescription(await genCommandList(client, category))
-                .setTitle(
-                  `${
-                    category.charAt(0).toUpperCase() + category.slice(1)
-                  } - related Commands`,
-                )
-                .setFooter({
-                  text: `Kronix!ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
-                }),
-            ],
-          }).catch(() => {});
+          await m
+            .edit({
+              embeds: [
+                new client.embed()
+                  .setDescription(await genCommandList(client, category))
+                  .setTitle(
+                    `${
+                      category.charAt(0).toUpperCase() + category.slice(1)
+                    } - related Commands`,
+                  )
+                  .setFooter({
+                    text: `Nyxxxxxxxxx!ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
+                  }),
+              ],
+            })
+            .catch(() => {});
           break;
       }
     });

@@ -9,11 +9,11 @@ module.exports = async (client) => {
   await client.user.setPresence({
     activities: [
       {
-        name: `by akshat | ${client.prefix}help`,
+        name: `by Nyx | ${client.prefix}help`,
         type: require("discord.js").ActivityType.Custom,
       },
     ],
-    status: "online",
+    status: "dnd",
   });
 
   let mcount = 0;
@@ -54,7 +54,7 @@ module.exports = async (client) => {
       iconURL: client.user.displayAvatarURL(),
       name: client.user.username,
     })
-    .setFooter({ text: "Powered by 1sT-Services" });
+    .setFooter({ text: "Powered by Nyx Market" });
 
   client.log(
     `Loaded ` +

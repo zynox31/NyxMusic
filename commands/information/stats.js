@@ -69,7 +69,7 @@ module.exports = {
     let statsEmbed = new client.embed()
       .title(`${client.user.username} Status :`)
       .setFooter({
-        text: `Page : [1/3] By ━● 1sT-Servicesㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
+        text: `Page : [1/3] By ━ 1st-Servicesㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
       });
     let nodeStatsEmbed = new client.embed()
       .title(`${client.user.username} Node Status :`)
@@ -94,7 +94,7 @@ module.exports = {
           .join("\n\n"),
       )
       .setFooter({
-        text: `Page : [2/3] By ━● 1sT-Servicesㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
+        text: `Page : [2/3] By ━ 1sT-Servicesㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
       });
 
     const uri = await genGraph(
@@ -102,7 +102,7 @@ module.exports = {
       wait.createdAt - message.createdAt,
     );
     const graphEmbed = new client.embed().img(uri).setFooter({
-      text: `Page : [3/3] By ━● 1sT-Servicesㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
+      text: `Page : [3/3] By ━ 1sT-Servicesㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`,
     });
 
     for (i = 0; i < v.length; i++) {

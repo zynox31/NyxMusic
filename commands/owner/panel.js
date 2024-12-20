@@ -32,7 +32,7 @@ module.exports = {
     let reply = await message.reply({ embeds: [emb] }).catch(() => {});
     const credentials = [
       {
-        uri: "https://panel.moonhost.xyz",
+        uri: "https://free.pylexnodes.net",
         key: "ptlc_h2lSpYWavHC72KMKpFEe1c7kToc7G50zvcJl9eWB9Sn",
         id: "cbbba353-e5fb-4eda-9c9f-3a84b6215679",
       },

@@ -22,7 +22,7 @@ module.exports = {
           `${client.emoji.point}⠀To get started use : ${client.prefix}help**\n`,
       })
       .setFooter({
-        text: `By Immortality`,
+        text: `Developed with <3 By Nyx`,
       })
       .setTimestamp();
     await message.reply({ embeds: [embed] }).catch(() => {});

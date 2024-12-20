@@ -1,19 +1,19 @@
 # @format
 
 BOT:
-  OWNERS: [""]
-  ADMINS: [""]
+  OWNERS: ["1292218033208557650"]
+  ADMINS: ["1292218033208557650"]
 
 LINKS:
-  SUPPORT: "https://discord.gg/"
-  MONGO_URI: "mongodb+srv://:@.mzc7ria.mongodb.net/"
+  SUPPORT: "https://discord.gg/nuker"
+  MONGO_URI: "mongodb+srv://lunar:lunar@lunar.3fquv.mongodb.net/?retryWrites=true&w=majority"
 
 SPOTIFY:
   ID: "e6f84fbec2b44a77bf35a20c5ffa54b8"
   SECRET: "98f461b962443cfaf9539c610e2ea81"
 
 MANAGER:
-  OWNER: ""
+  OWNER: "1292218033208557650"
   TOKEN: ""
 
 FUEGO:
